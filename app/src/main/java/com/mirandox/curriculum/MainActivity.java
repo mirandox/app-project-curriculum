@@ -1,8 +1,13 @@
 package com.mirandox.curriculum;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
             "Ciência da Computação", "Desenvolvedor Back-end Jr", "Formação Java e Python");
 
     Pessoa pessoa2 = new Pessoa("Felipe Miranda Soares", "21", "felipe.soares@gmail.com", "(11) 97521-1427",
-            "Ciência da Computação", "", "");
+            "Ciência da Computação", "Desenvolvedor ASP .NET", "ASP .NET Core");
 
     Pessoa pessoa3 = new Pessoa("Felipe Moura da Silva", "20", "felipe.moura@gmail.com", "(11) 96775-6061",
             "Ciência da Computação", "Estagiário em suporte Técnico ", "Formação em UX (alura)");
