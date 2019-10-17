@@ -8,20 +8,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Pessoa pessoa1 = new Pessoa("Felipe Miranda da Silva", "22", "felipe.miranda@gmail.com",
-            "(11) 97713-7435", "Ciência da Computação", "Desenvolvedor Back-end Jr", "Vários cursos pela Alura");
+    Pessoa pessoa1 = new Pessoa("Felipe Miranda da Silva", "22", "felipe.miranda@gmail.com", "(11) 97713-7435",
+            "Ciência da Computação", "Desenvolvedor Back-end Jr", "Formação Java e Python");
 
-    Pessoa pessoa2 = new Pessoa("Felipe Miranda Soares", "21", "felipe.soares@gmail.com",
-            "(11) 97521-1427", "Ciência da Computação", "", "");
+    Pessoa pessoa2 = new Pessoa("Felipe Miranda Soares", "21", "felipe.soares@gmail.com", "(11) 97521-1427",
+            "Ciência da Computação", "", "");
 
-    Pessoa pessoa3 = new Pessoa("Felipe Moura da Silva", "20", "felipe.moura@gmail.com",
-            "(11) 96775-6061", "Ciência da Computação", "", "");
+    Pessoa pessoa3 = new Pessoa("Felipe Moura da Silva", "20", "felipe.moura@gmail.com", "(11) 96775-6061",
+            "Ciência da Computação", "Estagiário em suporte Técnico ", "Formação em UX (alura)");
 
-    Pessoa pessoa4 = new Pessoa("Gabriel Dorneles Pereira da Silva", "21", "gabriel.dorneles@gmail.com",
-            "(11) 98693-6992", "Ciência da Computação", "", "");
+    Pessoa pessoa4 = new Pessoa("Gabriel Dorneles Pereira da Silva", "21", "gabriel.dorneles@gmail.com", "(11) 98693-6992",
+            "Ciência da Computação", "Analista de MIS", "Bootcamp OmniStack - Rocketseat (React e Node)");
 
-    Pessoa pessoa5 = new Pessoa("Leonardo Felipe Pacher", "21", "leonardo.pacher@gmail.com",
-            "(11) 96687-6162", "Ciência da Computação", "Analista Funcional/Arquiteto", "Certificado em Salesforce Administrator");
+    Pessoa pessoa5 = new Pessoa("Leonardo Felipe Pacher", "21", "leonardo.pacher@gmail.com", "(11) 96687-6162",
+            "Ciência da Computação", "Analista Funcional/Arquiteto", "Certificado em Salesforce Administrator");
 
     Integer[] drawableArray = {R.drawable.miranda, R.drawable.oraculo, R.drawable.moura, R.drawable.dornelas, R.drawable.leonardo};
 
@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView rv = findViewById(R.id.rv);
 
-        CustomAdapter ad = new CustomAdapter(MainActivity.this, drawableArray, nomeArray, emailArray, idadeArray, telefoneArray, formacaoArray, expProfissionalArray, qualiComplementaresArray);
+        CustomAdapter ad = new CustomAdapter(MainActivity.this, drawableArray, nomeArray,
+                emailArray, idadeArray, telefoneArray, formacaoArray, expProfissionalArray, qualiComplementaresArray);
         rv.setAdapter(ad);
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setHasFixedSize(true);
