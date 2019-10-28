@@ -1,4 +1,4 @@
-package com.mirandox.curriculum;
+package com.mirandox.curriculum.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mirandox.curriculum.R;
+import com.mirandox.curriculum.activities.InformationsActivity;
 import com.squareup.picasso.Picasso;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {

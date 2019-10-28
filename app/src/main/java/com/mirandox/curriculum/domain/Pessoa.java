@@ -1,4 +1,4 @@
-package com.mirandox.curriculum;
+package com.mirandox.curriculum.domain;
 
 import java.io.Serializable;
 

@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mirandox.curriculum.adapters.CustomAdapter;
+import com.mirandox.curriculum.domain.Pessoa;
+
 public class MainActivity extends AppCompatActivity {
 
     Pessoa pessoa1 = new Pessoa("Felipe Miranda da Silva", "22", "felipe.miranda@gmail.com", "(11) 97713-7435",

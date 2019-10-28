@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".InformationsActivity">
+        tools:context=".activities.InformationsActivity">
 
         <ImageView
             android:id="@+id/imgPessoa"
