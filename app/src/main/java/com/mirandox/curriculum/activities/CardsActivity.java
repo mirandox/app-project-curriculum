@@ -1,4 +1,4 @@
-package com.mirandox.curriculum;
+package com.mirandox.curriculum.activities;
 
 import android.os.Bundle;
 
@@ -6,10 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mirandox.curriculum.R;
 import com.mirandox.curriculum.adapters.CustomAdapter;
 import com.mirandox.curriculum.domain.Pessoa;
 
-public class MainActivity extends AppCompatActivity {
+public class CardsActivity extends AppCompatActivity {
 
     Pessoa pessoa1 = new Pessoa("Felipe Miranda da Silva", "22", "felipe.miranda@gmail.com", "(11) 97713-7435",
             "Ciência da Computação", "Desenvolvedor Back-end Jr", "Formação Java e Python");
@@ -45,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cards);
 
         RecyclerView rv = findViewById(R.id.rv);
 
-        CustomAdapter ad = new CustomAdapter(MainActivity.this, drawableArray, nomeArray,
+        CustomAdapter ad = new CustomAdapter(CardsActivity.this, drawableArray, nomeArray,
                 emailArray, idadeArray, telefoneArray, formacaoArray, expProfissionalArray, qualiComplementaresArray);
         rv.setAdapter(ad);
         rv.setLayoutManager(new LinearLayoutManager(this));

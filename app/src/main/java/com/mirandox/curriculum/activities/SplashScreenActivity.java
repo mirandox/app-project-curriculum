@@ -6,7 +6,6 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mirandox.curriculum.MainActivity;
 import com.mirandox.curriculum.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -26,7 +25,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void mainView() {
-        Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+        Intent intent = new Intent(SplashScreenActivity.this, HomeActivity.class);
         startActivity(intent);
         finish();
     }
