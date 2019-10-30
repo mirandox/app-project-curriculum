@@ -19,8 +19,6 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText editTxtFormacao;
     private EditText editTxtExperiencia;
     private EditText editTxtQualificacao;
-    private Button btnCadastrar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +32,6 @@ public class CadastroActivity extends AppCompatActivity {
         editTxtFormacao = findViewById(R.id.editTxtFormacao);
         editTxtExperiencia = findViewById(R.id.editTxtExperiencia);
         editTxtQualificacao = findViewById(R.id.editTxtQualificacao);
-        btnCadastrar = findViewById(R.id.btnCadastrar);
     }
 
     public void CadastrarCurriculo(View view) {
